@@ -16,13 +16,13 @@ int main(void)
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-printf("Last digit of %d is %d\n", n, n % 10);
+printf("Last digit of %i is %i\n", n, n % 10);
 if (n % 10 > 5)
-printf("Last digit of %d is %.1d and is greater than 5 \n", n, n % 10);
+printf("Last digit of %i is %.1i and is greater than 5 \n", n, n % 10);
 else if (n % 10 == 0)
-printf("Last digit of %d is %.2d and is 0 \n", n, n % 10);
+printf("Last digit of %i is %.2i and is 0 \n", n, n % 10);
 else if (n % 10 < 6 && n % 10 != 0)
-printf("Last digit of %d is %.3d and is less than 6 and not 0 \n", n, n % 10);
+printf("Last digit of %i is %.3i and is less than 6 and not 0 \n", n, n % 10);
 
 	return (0);
 }
