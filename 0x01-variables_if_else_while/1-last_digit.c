@@ -19,11 +19,11 @@ int main(void)
 	dig = n % 10;
 printf("Last digit of %i is %i\n", n, dig);
 if (dig > 5)
-printf("Last digit of %i is %.1i and is greater than 5 \n", n, dig);
+printf("Last digit of %i is %i and is greater than 5 \n", n, dig);
 else if (dig == 0)
-printf("Last digit of %i is %.2i and is 0 \n", n, dig);
+printf("Last digit of %i is %i and is 0 \n", n, dig);
 else if (dig < 6 && dig != 0)
-printf("Last digit of %i is %.3i and is less than 6 and not 0 \n", n, dig);
+printf("Last digit of %i is %i and is less than 6 and not 0 \n", n, dig);
 
 	return (0);
 }
