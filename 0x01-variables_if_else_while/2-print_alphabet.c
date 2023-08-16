@@ -4,11 +4,11 @@
 #include <stdio.h>
 
 /**
- * min entry point
+ * main - Entry point of the program
  *
- *description: print all alphabit letters
+ * This function prints the alphabet in lowercase, followed by a new line.
  *
- * return always 0 success
+ * Return: 0 on success
  */
 
 int main(void)
@@ -16,8 +16,9 @@ int main(void)
 char d = 'a';
 while (d <= 'z')
 {
-printf("%d", d);
+putchar (d);
 d++;
 }
+puchar ('\n');
 	return (0);
 }
