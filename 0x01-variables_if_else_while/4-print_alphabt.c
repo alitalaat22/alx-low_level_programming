@@ -14,7 +14,7 @@ int main(void)
 char lo = 'a';
 while (lo <= 'z')
 {
-if (lo == 'e' && 'q')
+if (lo == 'e' && lo == 'q')
 lo++;
 putchar(lo);
 lo++;
