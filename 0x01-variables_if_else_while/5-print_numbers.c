@@ -17,5 +17,6 @@ while (dio <= 9)
 printf("%d", dio);
 dio++;
 }
+printf("\n");
 return (0);
 }
