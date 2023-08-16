@@ -1,10 +1,10 @@
 #include <stdio.h>
 /**
-*main entry point
+*main - Entry point
 *
 * description prints all possible different combinations of two digits.
 *
-* Return Always 0 (suxxess)
+*Return Always 0 (success)
 */
 int main(void)
 {
