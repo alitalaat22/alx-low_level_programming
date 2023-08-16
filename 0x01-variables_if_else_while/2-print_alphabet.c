@@ -6,7 +6,7 @@
 /**
  * min entry point
  *
- * print all alphabit letters
+ *description: print all alphabit letters
  *
  * return always 0 success
  */
@@ -16,7 +16,7 @@ int main(void)
 char d = 'a';
 while (d <= 'z')
 {
-printf("%d\n", d);
+printf("%d", d);
 d++;
 }
 	return (0);
