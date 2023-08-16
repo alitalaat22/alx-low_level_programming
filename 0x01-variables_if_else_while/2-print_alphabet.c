@@ -1,14 +1,13 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
-#include <stdio.h>
 
 /**
- * main - Entry point of the program
+ * main - Entry point
  *
- * This function prints the alphabet in lowercase, followed by a new line.
+ * This function prints the alphabet in lowercase, followed by a new line
  *
- * Return: 0 on success
+ * Return: always 0 (success)
  */
 
 int main(void)
@@ -19,6 +18,6 @@ while (d <= 'z')
 putchar (d);
 d++;
 }
-puchar ('\n');
+putchar ('\n');
 	return (0);
 }
