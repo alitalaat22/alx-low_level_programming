@@ -1,24 +1,18 @@
-#include <_putchar.h>
-#include <0-putchar.h>
+#include <stdio.h>
+#include <unistd.h>
+
 /**
-*main - entry point
-*
-* description is prints _putchar, followed by a new line..
-*
-* Return: Always 0 (success)
-*/
+ * main - Entry Point
+ *
+ * Description prints _putchar
+ *
+ * Return: 0 Success
+ */
 int main(void)
 {
-{
-putchar('_');
-putchar('p');
-putchar('u');
-putchar('t');
-putchar('c');
-putchar('h');
-putchar('a');
-putchar('r');
-putchar('\n');
-}
+
+char ch[] = "_putchar\n";
+
+write(1, ch, 9);
 return (0);
 }
