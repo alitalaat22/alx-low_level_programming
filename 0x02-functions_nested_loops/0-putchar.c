@@ -1,4 +1,5 @@
-#include <stdio.h>
+#include <_putchar.h>
+#include <0-putchar.h>
 /**
 *main - entry point
 *
