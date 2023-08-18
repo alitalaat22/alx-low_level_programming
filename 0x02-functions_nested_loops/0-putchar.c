@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include "main.h"
 #include <unistd.h>
 
 /**
@@ -10,9 +10,13 @@
  */
 int main(void)
 {
-
-char ch[] = "_putchar\n";
-
-write(1, ch, 9);
+putchar('_');
+putchar('p');
+putchar('u');
+putchar('t');
+putchar('c');
+putchar('h');
+putchar('a');
+putchar('r');
 return (0);
 }
