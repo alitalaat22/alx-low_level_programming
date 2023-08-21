@@ -2,11 +2,11 @@
 #include <stdio.h>
 
 /**
-*_isdigit - function check digits
+ * _isdigit - functn check digits
  * @c: input integer
  *
- * Description: check for digits (0 : 9)
- * Return: 1 (success) is not 0
+ * Description: check for digits
+ * Return: 0, 1 (success)
  */
 
 int _isdigit(int c)
