@@ -10,12 +10,12 @@
 void print_line(int n)
 {
 int una;
-if (n <= 0)
-_putchar('\n');
+if (n > 0)
 {
-
-for (una = 1; una <= n; una++)
+for (una = 0; una < n; una++)
+{
 _putchar('_');
-_putchar('\n');
 }
+}
+_putchar('\n');
 }
