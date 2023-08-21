@@ -2,10 +2,14 @@
 #include <stdio.h>
 
 /**
- *mul(int a, int b) - check the code
+ * mul - functn multiplies two integers
+ * @a: first integer
+ * @b: second integer
  *
- * Return: Always 0 (success)
+ * Description:  a function that multiplies two integers
+ * Return: multiple
  */
+
 int mul(int a, int b)
 {
 	return (a * b);
