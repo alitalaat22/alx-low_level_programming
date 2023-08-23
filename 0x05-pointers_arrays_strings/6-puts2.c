@@ -1,23 +1,23 @@
 #include "main.h"
-
 /**
- * puts2 - Write a function that prints every other character.
- *@STR:n_m_b_e_r
- * Return: returns always (0)
+ * puts2 - function prints every other char of a string
+ * @str: my input
+ *
+ * Description: function prints arr.
+ *
+ * Return: length
  */
-
-void puts2(char *STR)
+void puts2(char *str)
 {
-int x = 0;
-int y = 0;
-do {
-y++;
-} while (STR[y] != '\0');
-while (x < y)
-{
-x += 2;
-_putchar(STR[y]);
+	int i = 0;
 
-}
-_putchar ('\n');
+	while (str[i] != '\0')
+	{
+		if (i % 2 == 0)
+		{
+			_putchar(str[i]);
+		}
+		i++;
+	}
+	_putchar('\n');
 }
