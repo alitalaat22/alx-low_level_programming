@@ -1,14 +1,35 @@
-def is_palindrome(num):
-    return str(num) == str(num)[::-1]
+#include <stdio.h>
+#include <stdbool.h>
 
-largest_palindrome = 0
+bool is_palindrome(int num) {
+    int reversed = 0;
+    int original = num;
 
-for i in range(100, 1000):
-    for j in range(100, 1000):
-        product = i * j
-        if is_palindrome(product) and product > largest_palindrome:
-            largest_palindrome = product
+    while (num > 0) {
+        reversed = reversed * 10 + num % 10;
+        num /= 10;
+    }
 
-# Save the result to a file
-with open("102-result", "w") as f:
-    f.write(str(largest_palindrome))
+    return original == reversed;
+}
+
+int main() {
+    int largest_palindrome = 0;
+
+    for (int i = 100; i < 1000; i++) {
+        for (int j = 100; j < 1000; j++) {
+            int product = i * j;
+            if (is_palindrome(product) && product > largest_palindrome) {
+                largest_palindrome = product;
+            }
+        }
+    }
+
+    // Save the result to a file
+    FILE *file = fopen("102-result", "w");
+    fprintf(file, "%d", largest_palindrome);
+    fclose(file);
+
+    return 0;
+}
+
